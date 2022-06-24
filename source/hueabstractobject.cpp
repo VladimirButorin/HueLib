@@ -228,7 +228,7 @@ bool HueAbstractObject::setXY(const double x, const double y)
 {
     QJsonArray xy = {x, y};
     QJsonObject json {
-        {"ct", xy}
+        {"xy", xy}
     };
 
     HueRequest request = makePutRequest(json);
